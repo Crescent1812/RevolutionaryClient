@@ -1,0 +1,14 @@
+# Project place file
+/RevolutionaryClient.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+wally.lock
+src/wally.lock
+Packages/
+src/Packages
+README.md
+
+sourcemap.json

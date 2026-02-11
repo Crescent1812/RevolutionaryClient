@@ -1,0 +1,12 @@
+{
+  "name": "RevolutionaryClient",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+        "$className": "ReplicatedStorage",
+        "RevolutionaryClient": {
+            "$path": "src"
+        }
+    }
+  }
+}
