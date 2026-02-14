@@ -46,4 +46,4 @@ function CreateUIProfile.RemoveProfile<p>(callback: (c: cc) -> string, Name: str
 	return props, item, Name
 end
 
-return CreateUIProfile
+return CreateUIProfile :: CreateUIProfile
