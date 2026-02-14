@@ -2,6 +2,10 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local CreateUIProfile = {}
 CreateUIProfile.__index = CreateUIProfile
 
+export type CreateUIProfile = typeof(setmetatable({} :: {}, CreateUIProfile))
+
+local cup = {} :: CreateUIProfile
+
 type cc = {
 	Instance: string,
 	string: string,
@@ -29,7 +33,7 @@ function CreateUIProfile.RemoveProfile<p>(callback: (c: cc) -> string, Name: str
 	local function getprofiledir(dir: PDIR): PDIR
 		return dir
 	end
-	gpd = getprofiledir(ReplicatedStorage.RevolutionaryClient.Profiles)
+	local _gpd = getprofiledir(ReplicatedStorage.RevolutionaryClient.Profiles)
 
 	props = props or {}
 	props.ProfileConfigName = props.ProfileConfigName or Instance.new("Configuration").Name or string
