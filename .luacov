@@ -1,0 +1,10 @@
+return {
+	runreport = true, -- auto-generate report after program ends
+	deletestats = true, -- clear old stats
+	statsfile = "luacov.stats.out",
+	reportfile = "luacov.report.out",
+
+	-- optional: include/exclude patterns
+	include = { "lua/" },
+	exclude = { "lua/tests/", "lua/spec/" },
+}
